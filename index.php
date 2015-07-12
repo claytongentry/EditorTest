@@ -1,6 +1,5 @@
 <!--
 TODO:
-- Resolve html tag problems
 - Sexify
 - Ensure user is working on a desktop w/ media query
 -->
@@ -21,21 +20,15 @@ TODO:
   <form method = "post" onsubmit = "return copyCopy()" action = <?php echo htmlspecialchars('mailer/submit.php');?>>
     <div id = "copy" contenteditable>
 
-    <p>Austerity and the Politics of Money
+      <p>Austerity and the Politics of Money
+      </p><p>This critical assessment of austerity policies across Europe by Mark Blyth, professor of international political economy at Brown University, can help you make sense of what’s going on in Greece.
+      </p><p>How Sharks Have Sex
+      </p><p>In honor of #SharkWeek, the good folks at Discovery News tell us everything we ever wanted to know about how our favorite predators get it on.
+      </p><p>Should This Lake Exist?
+      </p><p>The Salton Sea is in the middle of the California desert, and it appeared there entirely by accident. That didn’t stop locals from trying to turn it into the American version of the French Riviera in the 1960s. This video, from science and engineering presenter Veritasium, tells the fascinating story of this accidental lake.
+      </p><p>What Does LSD Do To The Brain?
+      </p><p>Here’s a short and sweet primer on acid, its fabled history, and its actual effects on the brain by Greg Foot at BritLab. Just so you know.</p>
 
-    </p><p>This critical assessment of austerity policies across Europe by Mark Blyth, professor of international political economy at Brown University, can help you make sense of what’s going on in Greece.
-
-    </p><p>How Sharks Have Sex
-
-    </p><p>In honor of #SharkWeek, the good folks at Discovery News tell us everything we ever wanted to know about how our favorite predators get it on.
-
-    </p><p>Should This Lake Exist?
-
-    </p><p>The Salton Sea is in the middle of the California desert, and it appeared there entirely by accident. That didn’t stop locals from trying to turn it into the American version of the French Riviera in the 1960s. This video, from science and engineering presenter Veritasium, tells the fascinating story of this accidental lake.
-
-    </p><p>What Does LSD Do To The Brain?
-
-    </p><p>Here’s a short and sweet primer on acid, its fabled history, and its actual effects on the brain by Greg Foot at BritLab. Just so you know.</p>
     </div>
     <textarea id = "hidden_copy" name = "hidden" display = "none"></textarea>
     <input type = "submit" value = "Submit"/>
@@ -57,10 +50,8 @@ TODO:
       // Takes parameter of how much time passed when site was open but test was not
       function startTest(openTime) {
 
-        // var timeIn = true;
-        // Run test for two hours
-          console.log("Allan!");
-
+          // var timeIn = true;
+          // Run test for two hours
           var timer = setInterval(countdown, 1000); // Update timer every second
 
           function countdown() {
