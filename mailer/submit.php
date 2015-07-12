@@ -35,7 +35,7 @@
 
         // Send mail
         if ($mail->Send() == false) {
-            echo "\n\nMailing failed.\n\n";
+            $mail->SMTPDebug = 1;
             die($mail->ErrorInfo);
         }
 
