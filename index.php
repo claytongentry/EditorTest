@@ -1,5 +1,6 @@
 <!--
 TODO:
+- Resolve html tag problems
 - Sexify
 - Ensure user is working on a desktop w/ media query
 -->

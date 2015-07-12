@@ -5,9 +5,8 @@
     require('class.smtp.php');
     require('PHPMailerAutoload.php');
 
-    // Get copy and clean it
-    $copy = $_POST["hidden"];
-
+    // Preserve formatting from editor (nl2br)
+    $copy = nl2br($_POST["hidden"]);
     // Ensure form filled out correctly
     if (!empty($copy)) {
 
