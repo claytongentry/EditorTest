@@ -8,49 +8,110 @@ TODO:
 
   <div class = "container">
 
-  <h1>Inverse Editor Test</h1>
-
-  <div id = "timer">
-    <p><span id = "hours">1</span>:<span id = "minutes">59</span></p>
-  </div>
-
-  <button onclick="startTest(performance.now())">Start Test!</button>
-
-  <!-- Create the editor container and place to store it-->
-  <form method = "post" onsubmit = "return copyCopy()" action = <?php echo htmlspecialchars('mailer/submit.php');?>>
-    <div id = "copy" contenteditable>
-
-      <p>Austerity and the Politics of Money
-      </p><p>This critical assessment of austerity policies across Europe by Mark Blyth, professor of international political economy at Brown University, can help you make sense of what’s going on in Greece.
-      </p><p>How Sharks Have Sex
-      </p><p>In honor of #SharkWeek, the good folks at Discovery News tell us everything we ever wanted to know about how our favorite predators get it on.
-      </p><p>Should This Lake Exist?
-      </p><p>The Salton Sea is in the middle of the California desert, and it appeared there entirely by accident. That didn’t stop locals from trying to turn it into the American version of the French Riviera in the 1960s. This video, from science and engineering presenter Veritasium, tells the fascinating story of this accidental lake.
-      </p><p>What Does LSD Do To The Brain?
-      </p><p>Here’s a short and sweet primer on acid, its fabled history, and its actual effects on the brain by Greg Foot at BritLab. Just so you know.</p>
-
+    <!--Header-->
+    <div class="row">
+      <div class = "header col-md-8">
+        <h1>Inverse Editing Test</h1>
+      </div>
+      <div class = "header col-md-4" id = "timer">
+        <p><span id = "hours">2 hr</span>, <span id = "minutes">00 min</span></p>
+        <!-- <button></button> -->
+      </div>
     </div>
-    <textarea id = "hidden_copy" name = "hidden" display = "none"></textarea>
-    <input type = "submit" value = "Submit"/>
-  </form>
+
+    <!-- Create the editor container and place to store it-->
+    <div class = "row" id = "copy_begin">
+      <div class = "col-md-12">
+        <form id = "copy_form" method = "post" onsubmit = "return copyCopy()" action = <?php echo htmlspecialchars('mailer/submit.php');?>>
+
+          <!-- Start Button-->
+          <div class = "row" id = "button_holder">
+            <button id = "start" type = "button" onclick="startTest(performance.now())">Begin</button>
+          </div>
+
+          <div id = "copy" style = "display: none;">
+            <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
+            <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+            <br/>
+            <p>If I bowed to the God of Reincarnation, or crawled into a shallow hole at the Pet Sematary, however that works, I would beg to be brought back as Tom Hardy. Even megastars and leading men struggle to carve out a niche in Hollywood; Hardy, meanwhile, is using a chainsaw. We could all do worse than to be a little more Tom Hardy each day.</p>
+            <p>Pretty much every one knows of Tom Hardy now, after he salted the flaccid CGI game with his turn as Mad Max in George Miller’s visceral — and mostly real — Mad Max: Fury Road. The role has transformed Hardy from one of those “you know Tom Hardy, he was the dude in ‘this movie’ and ‘that movie’” guys into, simply, Tom Hardy. But he’s been around a minute, taking on challenging roles, smaller roles, and sneaking his brutish charm into some mega blockbusters along the way. The guy is more than just another prototypical marquee-topper; he’s a complex and fascinating character away from the cinema. He is a man’s man for man’s men.</p>
+            <p>Tom Hardy does not project the debonair charm of a Cary Grant spawn, a la Clooney. He doesn’t have Brad Pitt’s cement-block abs. He doesn’t have Leo’s boyish glint or the Mouse Club perfection of Ryan Gosling. His teeth tilt, he’s bedecked in tattoos, his haircuts look like a crazed FIFA fullback’s, and his beard looks like a hipster got caught in a Cuisinart. And it isn’t manufactured to look that way, that’s just how he rolls. The rakishly good looks mirror his jagged charisma.</p>
+            <p>His confidence shines through in several of his performances, in roles where his appearance is deceptively hidden. In Bronson, he looks like a bald version of bare-knuckle boxer John L. Sullivan), he wore a mask through the entirety of The Dark Knight Rises. Clooney, Pitt, DiCaprio, all those dudes are great in their own right, but do they ever look different beyond a hairstyle change? Even that’s a rarity. Hardy is more accessible if you ask me, a penetrable personality not floating in the clouds of Hollywood.</p>
+            <p>Dude has also crushed some serious demons. In his early days, Hardy was a drunk and a druggie, a “bugger” in his own words, but he figured out that path had a definitive and abrupt end on a much shorter road, so he kicked the habits. All of them. Hardy transformed from a waste of space into a legit performer, constantly challenging the form.</p>
+            <p>Under the scars and scraggly beard, he’s a quirky and delicately thoughtful guy. If you think he’s nothing but a serious bloke, check out his old MySpace page.</p>
+            <p>Fury Road isn’t the only place to see Tom Hardy in 2015. In September, Hardy takes on dual roles as the Kray Twins in Legend, and in the thick of awards season he will star alongside DiCaprio in The Revenant. The more Tom Hardy the better. Hollywood and the current State of Man need more badasses who roll to their own beat. He is a movie star because that’s his job, not because he is a movie star in the purest sense. And I dig that about the guy.</p>
+          </div>
+
+          <textarea id = "hidden_copy" name = "hidden" display = "none"></textarea>
+
+          <br/>
+
+          <div class="form-actions">
+            <button type="submit" class="btn"><a name = "submit">Submit</a></button>
+          </div>
+
+        </form>
+      </div>
+    </div>
 
   </div>
 
-  <!--jQuery-->
-  <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+  <ol style = "display: none" id = "joyride_tour" data-joyride>
+    <li data-class = "header" data-button="Okay">
+      <h2>Hey!</h2>
+      <p>Welcome to the Inverse editing test. It's nothing fancy, but let me show you around before we get started.</p>
+    </li>
+    <li data-id = "timer" data-button="Got it.">
+      <h2>Timer</h2>
+      <p>You'll have two hours to do as much correcting as possible. This timer will start when you start the test and will count down to 0:00, at which point you won't be able to change any more copy. If it's distracting you, click the x to hide it. You can always reopen it later.</p>
+    </li>
+    <li data-id = "copy_form" data-button="Easy peezy.">
+      <h2>The Editor</h2>
+      <p>When you start the test, this box will fill up with a bunch of bad copy, which you'll be able to edit right here in the browser. Clean it up as best you can according to AP style and the Inverse styleguide. Use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
+    </li>
+    <li data-class = "btn" data-button="Sounds good.">
+      <h2>Submit</h2>
+      <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click to it to send the copy to our managing editor, Hannah Margaret Allen.</p>
+    </li>
+    <li data-id="start" data-button="I'm ready.">
+      <h2>Start 'er up.</h2>
+      <p>When you're ready, you can click 'Begin' to start the test.</p>
+    </li>
+  </ol>
+
+  <!--jQuery and Joyride-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./js/modernizr.mq.js"></script>
+  <script type="text/javascript" src="./js/jquery.joyride-2.1.js"></script>
 
   <script>
+    /***************************************************************************
+    * Joyride
+    ***************************************************************************/
+    $(window).load(function() {
+      $("#joyride_tour").joyride({
+        autoStart : true,
+        modal:true,
+      });
+    });
+
     /****************************************************
     * Timer
     ****************************************************/
     // $(document).ready(function() {
 
-      // startTest(performance.now());
-
       // Takes parameter of how much time passed when site was open but test was not
       function startTest(openTime) {
 
-          // var timeIn = true;
+          // Hide the now useless Start Test button
+          $("#start").fadeOut();
+
+          $("#copy").fadeIn();
+
+          // Make copy editable
+          document.getElementById("copy").contentEditable = true;
+
           // Run test for two hours
           var timer = setInterval(countdown, 1000); // Update timer every second
 
@@ -62,7 +123,7 @@ TODO:
             // Shut it down at two minutes (to be hours)
             if (timeIn > 120000) {
               setTimeout(testOver, 0);
-              document.getElementById("timer").innerHTML = "Time's up!";
+              document.getElementById("timer").innerHTML = "Pencils down!";
             }
 
             /*
@@ -72,15 +133,15 @@ TODO:
             */
             mins = 60 - Math.ceil((timeIn / 1000) % 60);
             // Reset at 0
-            if (mins == -1) {
-              mins = 59;
-            }
+            // if (mins == -1) {
+            //   mins = 59;
+            // }
 
             hrs = 2 - Math.ceil(timeIn / 60000);
 
             // Update view
-            document.getElementById("minutes").innerHTML = ('0' + mins).slice(-2);
-            document.getElementById('hours').innerHTML = hrs;
+            document.getElementById("minutes").innerHTML = ('0' + mins).slice(-2) + " min";
+            document.getElementById('hours').innerHTML = hrs + " hrs";
           }
 
           function testOver() {
@@ -96,6 +157,7 @@ TODO:
       * Copy Prep for PHP Mailing
       ****************************************************/
       function copyCopy() {
+
         // Copy content from editable (but non-mailable) div element to non-editable (but mailable) form element
         document.getElementById("hidden_copy").value = document.getElementById("copy").innerHTML;
         console.log("Stuff to send: " + document.getElementById("hidden_copy").value);

@@ -30,6 +30,9 @@
         // Set to
         $mail->AddAddress("clayton.gentry@inverse.com");
 
+        // Set subject
+        $mail->Subject = "New Editor Test";
+
         // Set body
         $mail->Body = nl2br($copy);
 
@@ -46,4 +49,5 @@
 <?php require('../templates/header.php');?>
 <h1>Thank you!</h1>
 <p>Hannah Margaret will get back to you soon.</p>
+<p>In the meantime, how 'bout <a href = "https://www.inverse.com">some light reading?</a></p>
 <?php require('../templates/footer.php');?>
