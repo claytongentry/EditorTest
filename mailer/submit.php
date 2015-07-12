@@ -11,7 +11,8 @@
     // Ensure form filled out correctly
     if (!empty($copy)) {
 
-        echo "Copy to mail: ". $copy."\r\r";
+        echo "Copy to mail: ".$copy;
+
         // Instantiate mailer
         $mail = new PHPMailer();
 
@@ -29,7 +30,7 @@
         $mail->SetFrom($fromaddress, $fromname);
 
         // Set to
-        $mail->AddAddress("cg3ntry@gmail.com");
+        $mail->AddAddress("clayton.gentry@inverse.com");
 
         echo "Mailing...";
 
@@ -38,7 +39,6 @@
 
         // Send mail
         if ($mail->Send() == false) {
-            $mail->SMTPDebug = 1;
             die($mail->ErrorInfo);
         }
 
