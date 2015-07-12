@@ -6,8 +6,7 @@
     require('PHPMailerAutoload.php');
 
     // Preserve formatting from editor (nl2br)
-    $copy = nl2br($_POST["hidden"]);
-    echo $copy;
+    $copy = $_POST["hidden"];
     // Ensure form filled out correctly
     if (!empty($copy)) {
 
@@ -31,7 +30,7 @@
         $mail->AddAddress("clayton.gentry@inverse.com");
 
         // Set body
-        $mail->Body = $copy;
+        $mail->Body = nl2br($copy);
 
         // Send mail
         if ($mail->Send() == false) {
