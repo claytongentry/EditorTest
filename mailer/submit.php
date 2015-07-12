@@ -20,6 +20,7 @@
         $mail->Username = getenv('user');
         $mail->Password = getenv('pw');
         $mail->Port = 587;
+        $mail->isHTML(true);
 
         // Set from
         $fromname = "Editor Test Application Server";
