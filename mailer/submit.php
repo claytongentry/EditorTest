@@ -11,8 +11,6 @@
     // Ensure form filled out correctly
     if (!empty($copy)) {
 
-        echo "Copy to mail: ".$copy;
-
         // Instantiate mailer
         $mail = new PHPMailer();
 
@@ -32,8 +30,6 @@
         // Set to
         $mail->AddAddress("clayton.gentry@inverse.com");
 
-        echo "Mailing...";
-
         // Set body
         $mail->Body = $copy;
 
@@ -43,13 +39,11 @@
         }
 
     } else {
-      echo "They ain't nothin in the copy box.";
+      echo "No text in the editor!";
     }
 ?>
 
 <?php require('templates/header.php');?>
-
-<h1>Thanks!</h1>
-<p>Hannah Margaret will get back to you soon.</h1>
-
+<h1>Thank you!</h1>
+<p>Hannah Margaret will get back to you soon.</p>
 <?php require('templates/footer.php');?>
