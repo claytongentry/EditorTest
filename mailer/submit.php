@@ -46,8 +46,8 @@
     }
 ?>
 
-<?php require('./templates/header.php');?>
+<?php require('../templates/header.php');?>
 <h1>Thank you!</h1>
 <p>Hannah Margaret will get back to you soon.</p>
 <p>In the meantime, how 'bout <a href = "https://www.inverse.com">some light reading?</a></p>
-<?php require('./templates/footer.php');?>
+<?php require('../templates/footer.php');?>
