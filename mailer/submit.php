@@ -7,9 +7,11 @@
 
     // Get copy and clean it
     $copy = $_POST["hidden"];
+
     // Ensure form filled out correctly
     if (!empty($copy)) {
 
+        echo "Copy to mail: ". $copy."\r\r";
         // Instantiate mailer
         $mail = new PHPMailer();
 
@@ -27,9 +29,10 @@
         $mail->SetFrom($fromaddress, $fromname);
 
         // Set to
-        $mail->AddAddress("clayton.gentry@inverse.com");
+        $mail->AddAddress("cg3ntry@gmail.com");
 
         echo "Mailing...";
+
         // Set body
         $mail->Body = $copy;
 
