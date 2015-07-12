@@ -32,10 +32,10 @@
         echo "Mailing...";
         // Set body
         $mail->Body = $copy;
-        echo "Mailed!";
 
         // Send mail
         if ($mail->Send() == false) {
+            echo "\n\nMailing failed.\n\n"
             die($mail->ErrorInfo);
         }
 
