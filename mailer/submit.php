@@ -7,6 +7,7 @@
 
     // Preserve formatting from editor (nl2br)
     $copy = nl2br($_POST["hidden"]);
+    echo $copy;
     // Ensure form filled out correctly
     if (!empty($copy)) {
 
