@@ -75,7 +75,7 @@
     </li>
     <li data-id = "submit" data-button="Sounds good.">
       <h2>Submit</h2>
-      <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click it to send the copy to our managing editor, Hannah Margaret Allen.</p>
+      <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click it to send the copy to our recruiting editor, Hannah Margaret Allen.</p>
     </li>
     <li data-id="start" data-button="I'm ready.">
       <h2>Start 'er up.</h2>
