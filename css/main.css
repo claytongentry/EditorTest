@@ -10,6 +10,18 @@ body {
   background-color: black;
 }
 
+h1, h4 {
+  font-family: Oswald, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
 textarea {
   display: none;
 }
@@ -24,15 +36,41 @@ textarea {
   text-align: center;
 }
 
-.header h1 {
-  font-size: 48px;
+#timer {
+  text-align: left;
+}
+
+#time {
+  font-family: Oswald, sans-serif;
+  display: inline-block;
+}
+
+#hideTimer {
+  padding: 0px;
+  background: black;
+  border: none;
+  display: none;
+}
+
+i {
+  transition: 0.2s;
+  color: gray;
+}
+
+i:hover {
+  transition: 0.2s;
+  color: white;
+}
+
+#show_timer {
+  display: none;
 }
 
 #copy_form {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 80%;
   background-color: white;
   border-radius: 15px;
   padding: 25px;
@@ -47,17 +85,24 @@ textarea {
   width: 150px;
   height: 50px;
   line-height: 50px;
+  border-radius: 5px;
   background: rgb(244,185,0);
   color: white;
+  transition: 0.2s;
+}
+
+#start:hover {
+  background: rgb(106,87,4);
+  transition: 0.2s;
 }
 
 #copy {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #333;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 20px;
   min-height: 1000px;
 }
 
@@ -66,4 +111,15 @@ textarea {
     padding-bottom: 10px;
     background-color: transparent;
     text-align: center;
+}
+
+#submit {
+  font-family: PT Sans, sans-serif;
+  background: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px;
+  border-radius: 5px;
 }

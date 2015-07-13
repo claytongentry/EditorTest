@@ -14,8 +14,11 @@ TODO:
         <h1>Inverse Editing Test</h1>
       </div>
       <div class = "header col-md-4" id = "timer">
-        <p><span id = "hours">2 hr</span>, <span id = "minutes">00 min</span></p>
-        <!-- <button></button> -->
+        <p id = "time"><span id = "hours">1 hr</span>, <span id = "minutes">59 min</span></p>
+        <button id ="hideTimer" onclick = "toggleTimer()" style = "background: black;"><i class="fa fa-times-circle fa-8x"></i></button>
+      </div>
+      <div class = "header col-md-4" id = "show_timer" onclick = "toggleTimer()">
+        <p style = "font-size: 16px; cursor: pointer">Show timer</p>
       </div>
     </div>
 
@@ -26,13 +29,13 @@ TODO:
 
           <!-- Start Button-->
           <div class = "row" id = "button_holder">
-            <button id = "start" type = "button" onclick="startTest(performance.now())">Begin</button>
+            <button id = "start" type = "button" onclick="startTest(performance.now())"><p>Begin</p></button>
           </div>
 
           <div id = "copy" style = "display: none;">
             <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
-            <br/>
+            <hr/>
             <p>If I bowed to the God of Reincarnation, or crawled into a shallow hole at the Pet Sematary, however that works, I would beg to be brought back as Tom Hardy. Even megastars and leading men struggle to carve out a niche in Hollywood; Hardy, meanwhile, is using a chainsaw. We could all do worse than to be a little more Tom Hardy each day.</p>
             <p>Pretty much every one knows of Tom Hardy now, after he salted the flaccid CGI game with his turn as Mad Max in George Miller’s visceral — and mostly real — Mad Max: Fury Road. The role has transformed Hardy from one of those “you know Tom Hardy, he was the dude in ‘this movie’ and ‘that movie’” guys into, simply, Tom Hardy. But he’s been around a minute, taking on challenging roles, smaller roles, and sneaking his brutish charm into some mega blockbusters along the way. The guy is more than just another prototypical marquee-topper; he’s a complex and fascinating character away from the cinema. He is a man’s man for man’s men.</p>
             <p>Tom Hardy does not project the debonair charm of a Cary Grant spawn, a la Clooney. He doesn’t have Brad Pitt’s cement-block abs. He doesn’t have Leo’s boyish glint or the Mouse Club perfection of Ryan Gosling. His teeth tilt, he’s bedecked in tattoos, his haircuts look like a crazed FIFA fullback’s, and his beard looks like a hipster got caught in a Cuisinart. And it isn’t manufactured to look that way, that’s just how he rolls. The rakishly good looks mirror his jagged charisma.</p>
@@ -47,7 +50,7 @@ TODO:
           <br/>
 
           <div class="form-actions">
-            <button type="submit" class="btn"><a name = "submit">Submit</a></button>
+            <button id="submit">Submit</button>
           </div>
 
         </form>
@@ -61,13 +64,13 @@ TODO:
       <h2>Hey!</h2>
       <p>Welcome to the Inverse editing test. It's nothing fancy, but let me show you around before we get started.</p>
     </li>
-    <li data-id = "timer" data-button="Got it.">
-      <h2>Timer</h2>
-      <p>You'll have two hours to do as much correcting as possible. This timer will start when you start the test and will count down to 0:00, at which point you won't be able to change any more copy. If it's distracting you, click the x to hide it. You can always reopen it later.</p>
-    </li>
-    <li data-id = "copy_form" data-button="Easy peezy.">
+    <li data-id = "copy_form" data-button="Got it.">
       <h2>The Editor</h2>
       <p>When you start the test, this box will fill up with a bunch of bad copy, which you'll be able to edit right here in the browser. Clean it up as best you can according to AP style and the Inverse styleguide. Use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
+    </li>
+    <li data-id = "timer" data-button="Easy peezy.">
+      <h2>Timer</h2>
+      <p>You'll have two hours to do as much correcting as possible. This timer will start when you start the test and will count down to 0:00, at which point you won't be able to change any more copy. If it's distracting you, hover over it to bring up a hide button. You can always reopen it later.</p>
     </li>
     <li data-class = "btn" data-button="Sounds good.">
       <h2>Submit</h2>
@@ -99,15 +102,32 @@ TODO:
     /****************************************************
     * Timer
     ****************************************************/
-    // $(document).ready(function() {
+      // UX Bits
+      $("#timer").hover(function() {
+        $("#hideTimer").fadeIn("fast");
+      }, function() {
+        $("#hideTimer").fadeOut("fast");
+      });
+
+      function toggleTimer() {
+        if ($("#timer").is(":visible")) {
+          $("#timer").fadeOut(400, function() {
+            $("#show_timer").fadeIn(500);
+          });
+        } else {
+          $("#show_timer").fadeOut(400, function() {
+            $("#timer").fadeIn();
+          });
+        }
+      }
 
       // Takes parameter of how much time passed when site was open but test was not
       function startTest(openTime) {
 
-          // Hide the now useless Start Test button
-          $("#start").fadeOut();
-
-          $("#copy").fadeIn();
+          // Hide the now-useless Start Test button
+          $("#start").fadeOut(400, function() {
+            $("#copy").fadeIn();
+          });
 
           // Make copy editable
           document.getElementById("copy").contentEditable = true;
@@ -131,17 +151,12 @@ TODO:
             * the quiz has been open divided by 60, then
             * subtracted from 60, then rounded up. Trust me — it works.
             */
-            mins = 60 - Math.ceil((timeIn / 1000) % 60);
-            // Reset at 0
-            // if (mins == -1) {
-            //   mins = 59;
-            // }
-
-            hrs = 2 - Math.ceil(timeIn / 60000);
+            mins = 60 - Math.floor((timeIn / 1000) % 60);
+            hrs = 1 - Math.floor(timeIn / 60000);
 
             // Update view
             document.getElementById("minutes").innerHTML = ('0' + mins).slice(-2) + " min";
-            document.getElementById('hours').innerHTML = hrs + " hrs";
+            document.getElementById('hours').innerHTML = hrs + " hr";
           }
 
           function testOver() {
