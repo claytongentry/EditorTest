@@ -1,9 +1,10 @@
 <!--
-TODO:
-- Sexify
-- Ensure user is working on a desktop w/ media query
+*
+* INVERSE Editor Test Application
+* Developed by Clayton Gentry, claytongentry.com
+* July 12, 2015
+*
 -->
-
 <?php require('templates/header.php'); ?>
 
   <div class = "container">
