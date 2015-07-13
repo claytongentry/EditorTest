@@ -33,7 +33,7 @@
             <button id = "start" type = "button" onclick="startTest(performance.now())"><p>Begin</p></button>
           </div>
 
-          <div id = "copy" style = "display: none;">
+          <div id = "copy" style = "display: none;" spellcheck="false">
             <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
             <hr/>
