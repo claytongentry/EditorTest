@@ -47,7 +47,10 @@
 ?>
 
 <?php require('../templates/header.php');?>
-<h1>Thank you!</h1>
-<p>Hannah Margaret will get back to you soon.</p>
-<p>In the meantime, how 'bout <a href = "https://www.inverse.com">some light reading?</a></p>
+<div id = "submit_body">
+  <h1>Thank you!</h1>
+  <p>Hannah Margaret will get back to you soon.</p>
+  <hr/>
+  <p>In the meantime, how 'bout <a href = "https://www.inverse.com">some light reading?</a></p>
+</div>
 <?php require('../templates/footer.php');?>

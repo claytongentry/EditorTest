@@ -123,3 +123,27 @@ i:hover {
   padding: 0px;
   border-radius: 5px;
 }
+
+#submit_body {
+  text-align: center;
+  color: white;
+}
+
+#submit_body h1 {
+  margin-top: 200px;
+  font-size: 64px;
+}
+
+#submit_body hr {
+  color: rgb(244,185,0);
+}
+
+#submit_body a {
+  color: rgb(244,185,0);
+  transition: 0.2s;
+}
+
+#submit_body a:hover {
+  color: rgb(106,87,4);
+  transition: 0.2s;
+}
