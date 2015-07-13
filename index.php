@@ -72,7 +72,7 @@ TODO:
       <h2>Timer</h2>
       <p>You'll have two hours to do as much correcting as possible. This timer will start when you start the test and will count down to 0:00, at which point you won't be able to change any more copy. If it's distracting you, hover over it to bring up a hide button. You can always reopen it later.</p>
     </li>
-    <li data-class = "btn" data-button="Sounds good.">
+    <li data-id = "submit" data-button="Sounds good.">
       <h2>Submit</h2>
       <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click to it to send the copy to our managing editor, Hannah Margaret Allen.</p>
     </li>
