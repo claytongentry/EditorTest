@@ -61,13 +61,13 @@
   </div>
 
   <ol style = "display: none" id = "joyride_tour" data-joyride>
-    <li data-class = "header" data-button="Okay">
+    <li data-class = "header" data-button="Okay.">
       <h2>Hey!</h2>
       <p>Welcome to the Inverse editing test. It's nothing fancy, but let me show you around before we get started.</p>
     </li>
     <li data-id = "copy_form" data-button="Got it.">
       <h2>The Editor</h2>
-      <p>When you start the test, this box will fill up with a bunch of bad copy, which you'll be able to edit right here in the browser. Clean it up as best you can according to AP style and the Inverse styleguide. Use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
+      <p>When you start the test, this box will fill up with a bunch of bad copy, which you'll be able to edit right here in the browser. Clean it up as best you can according to AP style and the Inverse Style Guide. Use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
     </li>
     <li data-id = "timer" data-button="Easy peezy.">
       <h2>Timer</h2>
@@ -75,7 +75,7 @@
     </li>
     <li data-id = "submit" data-button="Sounds good.">
       <h2>Submit</h2>
-      <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click to it to send the copy to our managing editor, Hannah Margaret Allen.</p>
+      <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click it to send the copy to our managing editor, Hannah Margaret Allen.</p>
     </li>
     <li data-id="start" data-button="I'm ready.">
       <h2>Start 'er up.</h2>
