@@ -52,12 +52,12 @@ textarea {
   display: none;
 }
 
-i {
+header i {
   transition: 0.2s;
   color: gray;
 }
 
-i:hover {
+header i:hover {
   transition: 0.2s;
   color: white;
 }
