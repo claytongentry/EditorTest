@@ -123,7 +123,10 @@
         }
       }
 
-      // Takes parameter of how much time passed when site was open but test was not
+      /*
+      * Takes parameter of how much time passed when site was open but test was not
+      * Allows us to use high-res time (performance.now()) but w/ delayed start
+      */
       function startTest(openTime) {
 
           // Hide the now-useless Start Test button
@@ -151,7 +154,7 @@
             /*
             * Current minute is remainder of number of seconds
             * the quiz has been open divided by 60, then
-            * subtracted from 60, then rounded up. Trust me — it works.
+            * subtracted from 59, then rounded up. Trust me — it works.
             */
             mins = 59 - Math.floor((timeIn / 1000) % 60);
             hrs = 1 - Math.floor((timeIn / 60000) % 2);
