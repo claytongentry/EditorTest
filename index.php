@@ -23,12 +23,12 @@
       </div>
     </div>
 
-    <!-- Create the editor container and place to store it-->
+    <!-- Editor container-->
     <div class = "row" id = "copy_begin">
       <div class = "col-md-12">
         <form id = "copy_form" method = "post" onsubmit = "return copyCopy()" action = <?php echo htmlspecialchars('mailer/submit.php');?>>
 
-          <!-- Start Button-->
+          <!-- "Begin" Button-->
           <div class = "row" id = "button_holder">
             <button id = "start" type = "button" onclick="startTest(performance.now())"><p>Begin</p></button>
           </div>
@@ -162,9 +162,7 @@
 
           function testOver() {
             clearInterval(timer);
-            console.log("You will edit...\n");
             document.getElementById("copy").contentEditable = false;
-            console.log("\n...no longer.");
           }
 
       }
@@ -176,7 +174,6 @@
 
         // Copy content from editable (but non-mailable) div element to non-editable (but mailable) form element
         document.getElementById("hidden_copy").value = document.getElementById("copy").innerHTML;
-        console.log("Stuff to send: " + document.getElementById("hidden_copy").value);
 
         // Make sure it actually copied
         if (document.getElementById("hidden_copy").value)
