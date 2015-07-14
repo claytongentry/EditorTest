@@ -152,8 +152,8 @@
             * the quiz has been open divided by 60, then
             * subtracted from 60, then rounded up. Trust me — it works.
             */
-            mins = 60 - Math.floor((timeIn / 1000) % 60);
-            hrs = 1 - Math.floor(timeIn / 60000);
+            mins = 59 - Math.floor((timeIn / 1000) % 60);
+            hrs = 1 - Math.floor((timeIn / 60000) % 2);
 
             // Update view
             document.getElementById("minutes").innerHTML = ('0' + mins).slice(-2) + " min";
