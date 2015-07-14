@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <!-- Editor container-->
+    <!-- Editor Container-->
     <div class = "row" id = "copy_begin">
       <div class = "col-md-12">
         <form id = "copy_form" method = "post" onsubmit = "return copyCopy()" action = <?php echo htmlspecialchars('mailer/submit.php');?>>
@@ -33,7 +33,8 @@
             <button id = "start" type = "button" onclick="startTest(performance.now())"><p>Begin</p></button>
           </div>
 
-          <div id = "copy" style = "display: none;" spellcheck="false">
+          <!--Test Copy-->
+          <div id = "copy" style = "display: none" spellcheck="false">
             <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
             <hr/>
@@ -112,11 +113,11 @@
 
       function toggleTimer() {
         if ($("#timer").is(":visible")) {
-          $("#timer").fadeOut(400, function() {
-            $("#show_timer").fadeIn(500);
+          $("#timer").fadeOut(function() {
+            $("#show_timer").fadeIn();
           });
         } else {
-          $("#show_timer").fadeOut(400, function() {
+          $("#show_timer").fadeOut(function() {
             $("#timer").fadeIn();
           });
         }
@@ -126,7 +127,7 @@
       function startTest(openTime) {
 
           // Hide the now-useless Start Test button
-          $("#start").fadeOut(400, function() {
+          $("#start").fadeOut(function() {
             $("#copy").fadeIn();
           });
 
