@@ -10,9 +10,9 @@
   <div class="container">
 
     <!--Header-->
-    <div class="row">
+    <div class="row" id = "head">
       <div class="header col-md-8">
-        <h1>Inverse Editing Test</h1>
+        <h1>Inverse Edit Test</h1>
       </div>
       <div class="header col-md-4" id="timer">
         <p><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
@@ -38,13 +38,9 @@
             <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
             <hr/>
-            <p>If I bowed to the God of Reincarnation, or crawled into a shallow hole at the Pet Sematary, however that works, I would beg to be brought back as Tom Hardy. Even megastars and leading men struggle to carve out a niche in Hollywood; Hardy, meanwhile, is using a chainsaw. We could all do worse than to be a little more Tom Hardy each day.</p>
-            <p>Pretty much every one knows of Tom Hardy now, after he salted the flaccid CGI game with his turn as Mad Max in George Miller’s visceral — and mostly real — Mad Max: Fury Road. The role has transformed Hardy from one of those “you know Tom Hardy, he was the dude in ‘this movie’ and ‘that movie’” guys into, simply, Tom Hardy. But he’s been around a minute, taking on challenging roles, smaller roles, and sneaking his brutish charm into some mega blockbusters along the way. The guy is more than just another prototypical marquee-topper; he’s a complex and fascinating character away from the cinema. He is a man’s man for man’s men.</p>
-            <p>Tom Hardy does not project the debonair charm of a Cary Grant spawn, a la Clooney. He doesn’t have Brad Pitt’s cement-block abs. He doesn’t have Leo’s boyish glint or the Mouse Club perfection of Ryan Gosling. His teeth tilt, he’s bedecked in tattoos, his haircuts look like a crazed FIFA fullback’s, and his beard looks like a hipster got caught in a Cuisinart. And it isn’t manufactured to look that way, that’s just how he rolls. The rakishly good looks mirror his jagged charisma.</p>
-            <p>His confidence shines through in several of his performances, in roles where his appearance is deceptively hidden. In Bronson, he looks like a bald version of bare-knuckle boxer John L. Sullivan), he wore a mask through the entirety of The Dark Knight Rises. Clooney, Pitt, DiCaprio, all those dudes are great in their own right, but do they ever look different beyond a hairstyle change? Even that’s a rarity. Hardy is more accessible if you ask me, a penetrable personality not floating in the clouds of Hollywood.</p>
-            <p>Dude has also crushed some serious demons. In his early days, Hardy was a drunk and a druggie, a “bugger” in his own words, but he figured out that path had a definitive and abrupt end on a much shorter road, so he kicked the habits. All of them. Hardy transformed from a waste of space into a legit performer, constantly challenging the form.</p>
-            <p>Under the scars and scraggly beard, he’s a quirky and delicately thoughtful guy. If you think he’s nothing but a serious bloke, check out his old MySpace page.</p>
-            <p>Fury Road isn’t the only place to see Tom Hardy in 2015. In September, Hardy takes on dual roles as the Kray Twins in Legend, and in the thick of awards season he will star alongside DiCaprio in The Revenant. The more Tom Hardy the better. Hollywood and the current State of Man need more badasses who roll to their own beat. He is a movie star because that’s his job, not because he is a movie star in the purest sense. And I dig that about the guy.</p>
+            <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
+            </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
+            </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
           </div>
 
           <textarea id="hidden_copy" name="hidden" display="none"></textarea>
@@ -64,7 +60,7 @@
   <ol style="display: none" id="joyride_tour" data-joyride>
     <li data-class="header" data-button="Okay.">
       <h2>Hey!</h2>
-      <p>Welcome to the Inverse editing test. It's nothing fancy, but let me show you around before we get started.</p>
+      <p>Welcome to the Inverse Edit Test. It's nothing fancy, but let me show you around before we get started.</p>
     </li>
     <li data-id="copy_form" data-button="Got it.">
       <h2>The Editor</h2>

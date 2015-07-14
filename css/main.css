@@ -26,6 +26,10 @@ textarea {
   display: none;
 }
 
+#head {
+  height: 100px;
+}
+
 .header {
   color: white;
   font-weight: bold;
