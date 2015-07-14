@@ -35,8 +35,8 @@
 
           <!--Test Copy-->
           <div id="copy" spellcheck="false">
-            <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
-            <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+            <h1><strong>blah blah</strong></h1>
+            <h4>dek</h4>
             <hr/>
             <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
             </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
