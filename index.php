@@ -7,34 +7,34 @@
 -->
 <?php require('templates/header.php'); ?>
 
-  <div class = "container">
+  <div class="container">
 
     <!--Header-->
     <div class="row">
-      <div class = "header col-md-8">
+      <div class="header col-md-8">
         <h1>Inverse Editing Test</h1>
       </div>
-      <div class = "header col-md-4" id = "timer">
-        <p id = "time"><span id = "hours">1 hr</span>, <span id = "minutes">59 min</span></p>
-        <button id ="hideTimer" onclick = "toggleTimer()" style = "background: black;"><i class="fa fa-times-circle fa-8x"></i></button>
+      <div class="header col-md-4" id="timer">
+        <p id="time"><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
+        <button id="hideTimer" onclick="toggleTimer()" style="background: black"><i class="fa fa-times-circle fa-8x"></i></button>
       </div>
-      <div class = "header col-md-4" id = "show_timer" onclick = "toggleTimer()">
-        <p style = "font-size: 16px; cursor: pointer">Show timer</p>
+      <div class="header col-md-4" id="show_timer" onclick="toggleTimer()">
+        <p style="font-size: 16px; cursor: pointer">Show timer</p>
       </div>
     </div>
 
     <!-- Editor Container-->
-    <div class = "row" id = "copy_begin">
-      <div class = "col-md-12">
-        <form id = "copy_form" method = "post" onsubmit = "return copyCopy()" action = <?php echo htmlspecialchars('mailer/submit.php');?>>
+    <div class="row" id="copy_begin">
+      <div class="col-md-12">
+        <form id="copy_form" method="post" onsubmit="return copyCopy()" action=<?php echo htmlspecialchars('mailer/submit.php');?>>
 
           <!-- "Begin" Button-->
-          <div class = "row" id = "button_holder">
-            <button id = "start" type = "button" onclick="startTest(performance.now())"><p>Begin</p></button>
+          <div class="row" id="button_holder">
+            <button id="start" type="button" onclick="startTest(performance.now())"><p>Begin</p></button>
           </div>
 
           <!--Test Copy-->
-          <div id = "copy" style = "display: none" spellcheck="false">
+          <div id="copy" style="display: none" spellcheck="false">
             <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
             <hr/>
@@ -47,7 +47,7 @@
             <p>Fury Road isn’t the only place to see Tom Hardy in 2015. In September, Hardy takes on dual roles as the Kray Twins in Legend, and in the thick of awards season he will star alongside DiCaprio in The Revenant. The more Tom Hardy the better. Hollywood and the current State of Man need more badasses who roll to their own beat. He is a movie star because that’s his job, not because he is a movie star in the purest sense. And I dig that about the guy.</p>
           </div>
 
-          <textarea id = "hidden_copy" name = "hidden" display = "none"></textarea>
+          <textarea id="hidden_copy" name="hidden" display="none"></textarea>
 
           <br/>
 
@@ -61,20 +61,20 @@
 
   </div>
 
-  <ol style = "display: none" id = "joyride_tour" data-joyride>
-    <li data-class = "header" data-button="Okay.">
+  <ol style="display: none" id="joyride_tour" data-joyride>
+    <li data-class="header" data-button="Okay.">
       <h2>Hey!</h2>
       <p>Welcome to the Inverse editing test. It's nothing fancy, but let me show you around before we get started.</p>
     </li>
-    <li data-id = "copy_form" data-button="Got it.">
+    <li data-id="copy_form" data-button="Got it.">
       <h2>The Editor</h2>
       <p>When you start the test, this box will fill up with a bunch of bad copy, which you'll be able to edit right here in the browser. Clean it up as best you can according to AP style and the Inverse Style Guide. Use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
     </li>
-    <li data-id = "timer" data-button="Easy peezy.">
+    <li data-id="timer" data-button="Easy peezy.">
       <h2>Timer</h2>
       <p>You'll have two hours to do as much correcting as possible. This timer will start when you start the test and will count down to 0:00, at which point you won't be able to change any more copy. If it's distracting you, hover over it to bring up a hide button. You can always reopen it later.</p>
     </li>
-    <li data-id = "submit" data-button="Sounds good.">
+    <li data-id="submit" data-button="Sounds good.">
       <h2>Submit</h2>
       <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click it to send the copy to our recruiting editor, Hannah Margaret Allen.</p>
     </li>
@@ -97,7 +97,7 @@
     $(window).load(function() {
       $("#joyride_tour").joyride({
         autoStart : true,
-        modal:true,
+        modal:true
       });
     });
 
@@ -124,7 +124,7 @@
       }
 
       /*
-      * Takes parameter of how much time passed when site was open but test was not
+      * Takes parameter of how much time passed when site was open but before test begun
       * Allows us to use high-res time (performance.now()) but w/ delayed start
       */
       function startTest(openTime) {
