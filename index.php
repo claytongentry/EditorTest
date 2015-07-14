@@ -15,11 +15,11 @@
         <h1>Inverse Editing Test</h1>
       </div>
       <div class="header col-md-4" id="timer">
-        <p id="time"><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
-        <button id="hideTimer" onclick="toggleTimer()" style="background: black"><i class="fa fa-times-circle fa-8x"></i></button>
+        <p><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
+        <button id="hideTimer" onclick="toggleTimer()"><i class="fa fa-times-circle fa-8x"></i></button>
       </div>
       <div class="header col-md-4" id="show_timer" onclick="toggleTimer()">
-        <p style="font-size: 16px; cursor: pointer">Show timer</p>
+        <p>Show timer</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
           </div>
 
           <!--Test Copy-->
-          <div id="copy" style="display: none" spellcheck="false">
+          <div id="copy" spellcheck="false">
             <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
             <hr/>

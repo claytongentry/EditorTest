@@ -40,7 +40,7 @@ textarea {
   text-align: left;
 }
 
-#time {
+#time p {
   font-family: Oswald, sans-serif;
   display: inline-block;
 }
@@ -64,6 +64,11 @@ header i:hover {
 
 #show_timer {
   display: none;
+}
+
+#show_timer p {
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #copy_form {
@@ -97,6 +102,7 @@ header i:hover {
 }
 
 #copy {
+  display: none;
   font-size: 20px;
   line-height: 30px;
   color: #333;
