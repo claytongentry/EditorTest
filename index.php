@@ -92,9 +92,9 @@
       <h2>Timer</h2>
       <p>You'll have two hours to do as much correcting as possible. This timer will start when you start the test and will count down to 0:00, at which point you won't be able to change any more copy. If it's distracting you, hover over it to bring up a hide button. You can always reopen it later.</p>
     </li>
-    <li data-id="submit" data-button="Sounds good.">
+    <li data-id="copy_form" data-button="Sounds good.">
       <h2>Submit</h2>
-      <p>When you're done (or when time is up), you'll find this Submit button at the BOTTOM of the page. Click it to send the copy to our recruiting editor, Hannah Margaret Allen.</p>
+      <p>When you're done (or when time is up), you'll find a Submit button at the BOTTOM of the page. Click it to send the copy to our recruiting editor, Hannah Margaret Allen.</p>
     </li>
     <li data-id="start" data-button="I'm ready.">
       <h2>Start 'er up.</h2>
@@ -178,7 +178,7 @@
             timeIn = performance.now() - openTime;
 
             // Shut it down at two minutes (to be hours)
-            if (timeIn > 120000) {
+            if (timeIn > 3600000) {
               setTimeout(testOver, 0);
               document.getElementById("timer").innerHTML = "Pencils down!";
             }
