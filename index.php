@@ -128,6 +128,8 @@
       if (type != null) {
         document.getElementById(type + "_copy").style.display = "block";
       }
+
+      return type;
     }
 
 
@@ -222,7 +224,8 @@
       function copyCopy() {
 
         // Copy content from editable (but non-mailable) div element to non-editable (but mailable) form element
-        document.getElementById("hidden_copy").value = document.getElementById("copy").innerHTML;
+        test = selectTest(type);
+        document.getElementById("hidden_copy").value = document.getElementById(test + "_copy").innerHTML;
 
         // Make sure it actually copied
         if (document.getElementById("hidden_copy").value)
