@@ -65,9 +65,6 @@
               </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
             </div>
 
-          </div>
-
-
           <textarea id="hidden_copy" name="hidden" display="none"></textarea>
 
           <br/>
