@@ -8,75 +8,86 @@
 
 <?php require('templates/header.php'); ?>
 
-  <!--Identification-->
-  <div id = "id_box">
-    <form name = "id_form" id = "id_form" method = "post">
-      <p>I am a...</p>
-      <p><input type="radio" name = "test_type" value = "copyeditor" onclick = "selectTest('copyeditor');"> Copyeditor</input></p>
-      <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer');"> Writer</input></p>
-      <input id = "joyride_submit" value = "Go!" style = "cursor: pointer;"></input>
-    </form>
-  </div>
-
-  <div class="container" style = "display: none;">
-
-    <!--Header-->
-    <div class="row" id = "head">
-      <div class="header col-md-8">
-        <h1>Inverse Edit Test</h1>
-      </div>
-      <div class="header col-md-4" id="timer">
-        <p><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
-        <button id="hideTimer" onclick="toggleTimer()"><i class="fa fa-times-circle fa-8x"></i></button>
-      </div>
-      <div class="header col-md-4" id="show_timer" onclick="toggleTimer()">
-        <p>Show timer</p>
-      </div>
-    </div>
-
-    <!-- Editor Container-->
-    <div class="row" id="copy_begin">
-      <div class="col-md-12">
-        <form id="copy_form" method="post" onsubmit="return copyCopy()" action=<?php echo htmlspecialchars('mailer/submit.php');?>>
-
-          <!-- "Begin" Button-->
-          <div class="row" id="button_holder">
-            <button id="start" type="button" onclick="startTest(performance.now())"><p>Begin</p></button>
-          </div>
-
-          <!--Test Copy-->
-          <div id = "copy" spellcheck = "false">
-
-            <div id = "copyeditor_copy" style = "display: none;">
-            <h1><strong>This Is the Copyeditor Test</strong></h1>
-            <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
-            <hr/>
-            <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
-            </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
-            </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+  <div class = "container">
+    <!--Identification-->
+    <div class = "col-md-12">
+      <div id = "id_box">
+        <form name = "id_form" id = "id_form" method = "post" role = "form" data-toggle = "validator">
+          <p>I am a...</p>
+          <div class = "form-group">
+            <div class = "radio">
+              <p><input type="radio" name = "test_type" value = "copyeditor" onclick = "selectTest('copyeditor');" required> Copyeditor</input></p>
             </div>
-
-            <div id = "writer_copy" style = "display: none;">
-              <h1><strong>This Is the Writer Test</strong></h1>
-              <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
-              <hr/>
-              <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
-              </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
-              </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+            <div class = "radio">
+              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer');" required> Writer</input></p>
             </div>
-
-          <textarea id="hidden_copy" name="hidden" display="none"></textarea>
-
-          <br/>
-
-          <div class="form-actions">
-            <button id="submit">Submit</button>
           </div>
-
+          <div class = "form-group">
+            <input id = "id_submit" value = "Go!" style = "cursor: pointer;"></input>
+          </div>
         </form>
       </div>
     </div>
 
+    <div class="test_container" style = "display: none;">
+
+      <!--Header-->
+      <div class="row" id = "head">
+        <div class="header col-md-8">
+          <h1>Inverse Edit Test</h1>
+        </div>
+        <div class="header col-md-4" id="timer">
+          <p><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
+          <button id="hideTimer" onclick="toggleTimer()"><i class="fa fa-times-circle fa-8x"></i></button>
+        </div>
+        <div class="header col-md-4" id="show_timer" onclick="toggleTimer()">
+          <p>Show timer</p>
+        </div>
+      </div>
+
+      <!-- Editor Container-->
+      <div class="row" id="copy_begin">
+        <div class="col-md-12">
+          <form id="copy_form" method="post" onsubmit="return copyCopy()" action=<?php echo htmlspecialchars('mailer/submit.php');?>>
+
+            <!-- "Begin" Button-->
+            <div class="row" id="button_holder">
+              <button id="start" type="button" onclick="startTest(performance.now())"><p>Begin</p></button>
+            </div>
+
+            <!--Test Copy-->
+            <div id = "copy" spellcheck = "false">
+
+              <div id = "copyeditor_copy" style = "display: none;">
+                <h1><strong>This Is the Copyeditor Test</strong></h1>
+                <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+                <hr/>
+                <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
+                </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
+                </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+              </div>
+
+              <div id = "writer_copy" style = "display: none;">
+                <h1><strong>This Is the Writer Test</strong></h1>
+                <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+                <hr/>
+                <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
+                </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
+                </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+              </div>
+
+              <textarea id="hidden_copy" name="hidden" display="none"></textarea>
+
+              <br/>
+
+              <div class="form-actions">
+                <button id="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <ol style="display: none" id="joyride_tour" data-joyride>
@@ -114,16 +125,18 @@
     * Copyeditor or Writer?
     ***************************************************************************/
     function selectTest(type) {
-      document.getElementById(type + "_copy").style.display = "block";
+      if (type != null) {
+        document.getElementById(type + "_copy").style.display = "block";
+      }
     }
 
 
     /***************************************************************************
     * Joyride Walkthrough
     ***************************************************************************/
-    $("#joyride_submit").click(function() {
+    $("#id_submit").click(function() {
       $("#id_box").fadeOut(function() {
-        $(".container").fadeIn(function() {
+        $(".test_container").fadeIn(function() {
           $("#joyride_tour").joyride({
             autoStart : true,
             modal:true

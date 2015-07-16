@@ -28,7 +28,7 @@
         $mail->SetFrom($fromaddress, $fromname);
 
         // Set to
-        $mail->AddAddress("hannahmargaret@inverse.com");
+        $mail->AddAddress("clayton.gentry@inverse.com");
 
         // Set subject
         $mail->Subject = "New Editor Test";
