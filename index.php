@@ -225,6 +225,7 @@
 
         // Copy content from editable (but non-mailable) div element to non-editable (but mailable) form element
         test = selectTest(type);
+        console.log(test);
         document.getElementById("hidden_copy").value = document.getElementById(test + "_copy").innerHTML;
 
         // Make sure it actually copied
