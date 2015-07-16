@@ -1,13 +1,24 @@
 <!--
 *
-* INVERSE Editor Test Application
+* INVERSE Edit Test Application
 * Developed by Clayton Gentry, claytongentry.com
 * July 12, 2015
 *
 -->
+
 <?php require('templates/header.php'); ?>
 
-  <div class="container">
+  <!--Identification-->
+  <div id = "id_box">
+    <form name = "id_form" id = "id_form" method = "post">
+      <p>I am a...</p>
+      <p><input type="radio" name = "test_type" value = "copyeditor" onclick = "selectTest('copyeditor');"> Copyeditor</input></p>
+      <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer');"> Writer</input></p>
+      <input id = "joyride_submit" value = "Go!" style = "cursor: pointer;"></input>
+    </form>
+  </div>
+
+  <div class="container" style = "display: none;">
 
     <!--Header-->
     <div class="row" id = "head">
@@ -34,14 +45,28 @@
           </div>
 
           <!--Test Copy-->
-          <div id="copy" spellcheck="false">
-            <h1><strong>Dear Universe, Bring Me Back as Tom Hardy</strong></h1>
+          <div id = "copy" spellcheck = "false">
+
+            <div id = "copyeditor_copy" style = "display: none;">
+            <h1><strong>This Is the Copyeditor Test</strong></h1>
             <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
             <hr/>
             <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
             </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
             </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+            </div>
+
+            <div id = "writer_copy" style = "display: none;">
+              <h1><strong>This Is the Writer Test</strong></h1>
+              <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+              <hr/>
+              <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
+              </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
+              </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+            </div>
+
           </div>
+
 
           <textarea id="hidden_copy" name="hidden" display="none"></textarea>
 
@@ -88,14 +113,28 @@
 
   <script>
     /***************************************************************************
-    * Joyride
+    * Test Selection
+    * Copyeditor or Writer?
     ***************************************************************************/
-    $(window).load(function() {
-      $("#joyride_tour").joyride({
-        autoStart : true,
-        modal:true
+    function selectTest(type) {
+      document.getElementById(type + "_copy").style.display = "block";
+    }
+
+
+    /***************************************************************************
+    * Joyride Walkthrough
+    ***************************************************************************/
+    $("#joyride_submit").click(function() {
+      $("#id_box").fadeOut(function() {
+        $(".container").fadeIn(function() {
+          $("#joyride_tour").joyride({
+            autoStart : true,
+            modal:true
+          });
+        });
       });
     });
+
 
     /****************************************************
     * Timer
@@ -152,8 +191,8 @@
             * the quiz has been open divided by 60, then
             * subtracted from 59, then rounded up. Trust me — it works.
             */
-            mins = 59 - Math.floor((timeIn / 1000) % 60);
-            hrs = 1 - Math.floor((timeIn / 60000) % 2);
+            mins = 59 - Math.floor((timeIn / 60000) % 60);
+            hrs = 1 - Math.floor((timeIn / 3600000) % 2);
 
             // Update view
             document.getElementById("minutes").innerHTML = ('0' + mins).slice(-2) + " min";
