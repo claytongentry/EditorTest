@@ -81,39 +81,40 @@
 
               <div id = "writer1_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>Prompt:</h4>
+                <h4>Prompt: Hugo Gernsbeck’s 131st birthday is on August 14. Write a brief post about why his work and legacy are still relevant today.</h4>
                 <hr/>
-                <p>Hugo Gernsbeck’s 131st birthday is on August 14. Write a brief post about why his work and legacy are still relevant today.</p>
+                <p></p>
               </div>
 
               <div id = "writer2_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>Prompt:</h4>
+                <h4>Prompt: Please break down the trailer for “The Intern” in order to give us a sense of what to expect from that film and what it might signify about attitudes toward start-up culture.</h4>
                 <hr/>
-                <p>Please break down the trailer for “The Intern” in order to give us a sense of what to expect from that film and what it might signify about attitudes toward start-up culture.</p>
+                <p></p>
               </div>
 
               <div id = "writer3_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>Prompt:</h4>
+                <h4>Prompt: Please write a story about the future of air conditioning. It does not need to be all encompassing and should posit a specific theory.</h4>
                 <hr/>
-                <p>Please write a story about the future of air conditioning. It does not need to be all encompassing and should posit a specific theory.</p>
+                <p></p>
               </div>
 
               <div id = "writer4_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>Prompt:</h4>
+                <h4>Prompt: Please write a story about the Mars Reconnaissance Rover. What was its significance, if any?</h4>
                 <hr/>
-                <p>Please write a story about the Mars Reconnaissance Rover. What was its significance, if any?</p>
+                <p></p>
               </div>
 
               <div id = "writer5_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>There are two parts:</h4>
+                <h4>There are two parts:<br/>
+                  1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.<br/>
+                  2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.</h4>
                 <hr/>
-                <p>1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.
-                </p><p>2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.
-                </p>
+                <p></p>
+              </div>
 
               <textarea id="hidden_copy" name="hidden" display="none"></textarea>
 
