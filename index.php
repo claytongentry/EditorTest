@@ -232,7 +232,7 @@
             timeIn = performance.now() - openTime;
 
             // Shut it down at two hours
-            if (timeIn > 3600000) {
+            if (timeIn > 7200000) {
               setTimeout(testOver, 0);
               document.getElementById("timer").innerHTML = "Pencils down!";
             }
