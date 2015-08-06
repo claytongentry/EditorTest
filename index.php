@@ -13,13 +13,25 @@
     <div class = "col-md-12">
       <div id = "id_box">
         <form name = "id_form" id = "id_form" method = "post" role = "form" data-toggle = "validator">
-          <p>I am a...</p>
+          <p>Select a test</p>
           <div class = "form-group">
             <div class = "radio">
               <p><input type="radio" name = "test_type" value = "copyeditor" onclick = "selectTest('copyeditor');" required> Copyeditor</input></p>
             </div>
             <div class = "radio">
-              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer');" required> Writer</input></p>
+              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer1');" required> Writer 1</input></p>
+            </div>
+            <div class = "radio">
+              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer2');" required> Writer 2</input></p>
+            </div>
+            <div class = "radio">
+              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer3');" required> Writer 3</input></p>
+            </div>
+            <div class = "radio">
+              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer4');" required> Writer 4</input></p>
+            </div>
+            <div class = "radio">
+              <p><input type="radio" name = "test_type" value = "writer" onclick = "selectTest('writer5');" required> Writer 5</input></p>
             </div>
           </div>
           <div class = "form-group">
@@ -67,13 +79,41 @@
                 </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
               </div>
 
-              <div id = "writer_copy" style = "display: none;">
+              <div id = "writer1_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+                <h4>Prompt:</h4>
                 <hr/>
-                <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
-                </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
-                </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+                <p>Hugo Gernsbeck’s 131st birthday is on August 14. Write a brief post about why his work and legacy are still relevant today.</p>
+              </div>
+
+              <div id = "writer2_copy" style = "display: none;">
+                <h1><strong>This Is the Writer Test</strong></h1>
+                <h4>Prompt:</h4>
+                <hr/>
+                <p>Please break down the trailer for “The Intern” in order to give us a sense of what to expect from that film and what it might signify about attitudes toward start-up culture.</p>
+              </div>
+
+              <div id = "writer3_copy" style = "display: none;">
+                <h1><strong>This Is the Writer Test</strong></h1>
+                <h4>Prompt:</h4>
+                <hr/>
+                <p>Please write a story about the future of air conditioning. It does not need to be all encompassing and should posit a specific theory.</p>
+              </div>
+
+              <div id = "writer4_copy" style = "display: none;">
+                <h1><strong>This Is the Writer Test</strong></h1>
+                <h4>Prompt:</h4>
+                <hr/>
+                <p>Please write a story about the Mars Reconaisance Rover. What was its significance, if any?</p>
+              </div>
+
+              <div id = "writer5_copy" style = "display: none;">
+                <h1><strong>This Is the Writer Test</strong></h1>
+                <h4>There are two parts:</h4>
+                <hr/>
+                <p>1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.
+                </p><p>2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.
+                </p>
               </div>
 
               <textarea id="hidden_copy" name="hidden" display="none"></textarea>
