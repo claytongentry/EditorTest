@@ -228,7 +228,7 @@
             // Start clock only when they open the test
             timeIn = performance.now() - openTime;
 
-            // Shut it down at two minutes (to be hours)
+            // Shut it down at two hours
             if (timeIn > 3600000) {
               setTimeout(testOver, 0);
               document.getElementById("timer").innerHTML = "Pencils down!";
