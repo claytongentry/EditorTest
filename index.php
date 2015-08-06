@@ -109,9 +109,9 @@
 
               <div id = "writer5_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>There are two parts:<br/>
-                  1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.<br/>
-                  2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.</h4>
+                <h4>There are two parts:
+                </h4><h4>1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.
+                </h4><h4>2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.</h4>
                 <hr/>
                 <p></p>
               </div>
