@@ -79,7 +79,7 @@
 
               <div id = "writer1_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>1) Hugo Gernsbeck’s 131st birthday is on August 14. Write a brief post about why his work and legacy are still relevant today.</h4>
+                <h4>1) Hugo Gernsbeck’s 131st birthday is on August 14. Write a brief post about why his work and legacy are still relevant today. Your article should have an angle, be based on aggregated information, and include a hed and dek.</h4>
                 <h4>2) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.</h4>
                 <hr/>
                 <p>Delete me and write here...</p>
@@ -87,7 +87,7 @@
 
               <div id = "writer2_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>1) Please break down the trailer for “The Intern” in order to give us a sense of what to expect from that film and what it might signify about attitudes toward start-up culture.</h4>
+                <h4>1) Please break down the trailer for “The Intern” in order to give us a sense of what to expect from that film and what it might signify about attitudes toward start-up culture. Your article should have an angle, be based on aggregated information, and include a hed and dek.</h4>
                 <h4>2) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.</h4>
                 <hr/>
                 <p>Delete me and write here...</p>
@@ -95,7 +95,7 @@
 
               <div id = "writer3_copy" style = "display: none;">
                 <h1><strong>This Is the Writer Test</strong></h1>
-                <h4>1) Please write a story about the future of air conditioning. It does not need to be all encompassing and should posit a specific theory.</h4>
+                <h4>1) Please write a story about the future of air conditioning. It does not need to be all encompassing and should posit a specific theory. Your article should have an angle, be based on aggregated information, and include a hed and dek.</h4>
                 <h4>2) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.</h4>
                 <hr/>
                 <p>Delete me and write here...</p>
