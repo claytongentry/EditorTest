@@ -49,7 +49,7 @@
           <h1>Inverse Edit Test</h1>
         </div>
         <div class="header col-md-4" id="timer">
-          <p><span id="hours">1 hr</span>, <span id="minutes">59 min</span></p>
+          <p><span id="hours">2 hr</span>, <span id="minutes">00 min</span></p>
           <button id="hideTimer" onclick="toggleTimer()"><i class="fa fa-times-circle fa-8x"></i></button>
         </div>
         <div class="header col-md-4" id="show_timer" onclick="toggleTimer()">
@@ -71,12 +71,12 @@
             <div id = "copy" spellcheck = "false">
 
               <div id = "copyeditor_copy" style = "display: none;">
-                <h1><strong>This Is the Copyeditor Test</strong></h1>
-                <h4>Every man can aspire to be a little more Hardy in their lives.</h4>
+                <h1><strong>This is the copy editing test.</strong></h1>
+                <h4>No current test in progress.</h4>
                 <hr/>
-                <p>Last week, we celebrated the 30th anniversary of “Sussudio,” Phil Collins’s breakout single and a personal favorite of American Psycho ‘s Patrick Bateman. Throughout the film, Bateman waxes poetic about his favorite musicians. Most famously, he sings the praises of Huey Lewis and the News before taking an axe to Jared Leto’s Paul Allen.
-                </p><p>Bateman’s taste is reflective of the corporate ‘80s. He didn’t like Huey Lewis and the News when they were “a little too new wave,” but their next album, with “a clear, crisp sound and a new sheen of consummate professionalism,” was just for him. Later, he professes his love for Genesis’ sincere lyrics, like on “‘In Too Deep,’ the most moving pop song of the 1980s…about monogamy and commitment.” Finally, he is astounded by the success of Whitney Houston’s self-titled debut, which had four No. 1 singles. His favorite of the four is “The Greatest Love of All,” a song about “self-preservation, dignity.”
-                </p><p>Bateman’s taste was perfect for his time. But what would he listen to today?</p>
+                <p>
+                </p><p>
+                </p><p></p>
               </div>
 
               <div id = "writer1_copy" style = "display: none;">
@@ -114,8 +114,7 @@
                 <p>1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.
                 </p><p>2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.
                 </p>
-              </div>
-
+                
               <textarea id="hidden_copy" name="hidden" display="none"></textarea>
 
               <br/>
@@ -137,7 +136,7 @@
     </li>
     <li data-id="copy_form" data-button="Got it.">
       <h2>The Editor</h2>
-      <p>When you start the test, this box will fill up with a bunch of bad copy, which you'll be able to edit right here in the browser. Clean it up as best you can according to AP style and the Inverse Style Guide. Use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
+      <p>When you start the test, this box will fill up with your prompt. You can click the prompt text and enter your response right here in the browser. If you need it, you can use 'Cmd-b' to bold and 'Cmd-i' to italicize ('Ctrl-b and Ctrl-i if you're on a PC).</p>
     </li>
     <li data-id="timer" data-button="Easy peezy.">
       <h2>Timer</h2>
@@ -145,7 +144,7 @@
     </li>
     <li data-id="copy_form" data-button="Sounds good.">
       <h2>Submit</h2>
-      <p>When you're done (or when time is up), you'll find a Submit button at the BOTTOM of the page. Click it to send the copy to our recruiting editor, Hannah Margaret Allen.</p>
+      <p>When you're done (or when time is up), you'll find a Submit button at the BOTTOM of the page. Click it to send the copy to our editorial coordinator, Hannah Margaret Allen.</p>
     </li>
     <li data-id="start" data-button="I'm ready.">
       <h2>Start 'er up.</h2>
