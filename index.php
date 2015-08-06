@@ -104,7 +104,7 @@
                 <h1><strong>This Is the Writer Test</strong></h1>
                 <h4>Prompt:</h4>
                 <hr/>
-                <p>Please write a story about the Mars Reconaisance Rover. What was its significance, if any?</p>
+                <p>Please write a story about the Mars Reconnaissance Rover. What was its significance, if any?</p>
               </div>
 
               <div id = "writer5_copy" style = "display: none;">
@@ -114,7 +114,7 @@
                 <p>1.) Please pitch eight stories. Four of the stories should be relatively quick news hits (one or no sources) and four of them should be either "thought scoops" or reported pieces. To get a better grasp of what’s our wheelhouse, just peruse the website.
                 </p><p>2.) Write a timely 400-word long piece from one of your above pitches. Your article should have an angle and be based on aggregated information. Please write a hed and dek for it as well — just for good measure.
                 </p>
-                
+
               <textarea id="hidden_copy" name="hidden" display="none"></textarea>
 
               <br/>
