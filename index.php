@@ -265,10 +265,18 @@
         // Copy content from editable (but non-mailable) div element to non-editable (but mailable) form element
         if ($("#copyeditor_copy").is(":visible"))
           document.getElementById("hidden_copy").value = document.getElementById("copyeditor_copy").innerHTML;
-        else if ($("#writer_copy").is(":visible"))
-          document.getElementById("hidden_copy").value = document.getElementById("writer_copy").innerHTML;
+        else if ($("#writer1_copy").is(":visible"))
+          document.getElementById("hidden_copy").value = document.getElementById("writer1_copy").innerHTML;
+        else if ($("#writer2_copy").is(":visible"))
+          document.getElementById("hidden_copy").value = document.getElementById("writer2_copy").innerHTML;
+        else if ($("#writer3_copy").is(":visible"))
+          document.getElementById("hidden_copy").value = document.getElementById("writer3_copy").innerHTML;
+        else if ($("#writer4_copy").is(":visible"))
+          document.getElementById("hidden_copy").value = document.getElementById("writer4_copy").innerHTML;
+        else if ($("#writer5_copy").is(":visible"))
+          document.getElementById("hidden_copy").value = document.getElementById("writer5_copy").innerHTML;
         else
-          console.log("But where's the copy?!");
+          console.log("No copy loaded.");
 
         // Make sure it actually copied
         if (document.getElementById("hidden_copy").value)
